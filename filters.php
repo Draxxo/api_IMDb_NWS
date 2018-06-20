@@ -3,7 +3,9 @@ $title = 'filters';
 include 'header.php'; ?>
 
 	<section class="filters-window">
-		
+		<div class="cross">
+			<i class="fas fa-times"></i>
+		</div>
 	</section>
 
 	<div class="container">
@@ -26,7 +28,7 @@ include 'header.php'; ?>
 						<li>Fantasy</li>
 						<li>Horreur</li>
 						<li>Policier</li>
-						<li>Romantiquer</li>
+						<li>Romantique</li>
 					</ul>
 				</ul>
 
@@ -69,7 +71,7 @@ include 'header.php'; ?>
 								L'intrigue relate le voyage dans le passé d'un adolescent, Marty McFly, à bord d'une machine à voyager dans le temps fabriquée par le docteur Emmett Brown à partir d'une voiture de modèle DeLorean DMC-12...
 							</p>
 						</div>
-						<a class="button" href="#">&#9658; Plus d'informations</a>
+						<a class="button">&#9658; Plus d'informations</a>
 					</div>
 				</article>
 				<?php } ?>

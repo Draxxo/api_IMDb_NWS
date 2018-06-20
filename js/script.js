@@ -9,7 +9,18 @@ $( document ).ready(function() {
      });
 
      $('.filters-films .card .button').click(function() {
-     	$('.filters-window').toggleClass('show');
+     	$('.filters-window').addClass('show');
      	$('.container').addClass('blur');
+     	$("html, body").animate({ scrollTop: 70 }, 600);
+ 	 });
+
+ 	 $('.filters-window .cross').click(function() {
+ 	 	$('.filters-window').addClass('unshow');
+ 	 	
+ 	 	setTimeout(function() {
+	 	 	$('.filters-window').removeClass('show');
+	 	 	$('.filters-window').removeClass('unshow');
+	 	 	$('.container').removeClass('blur');
+	 	 }, 200);
  	 });
 });
