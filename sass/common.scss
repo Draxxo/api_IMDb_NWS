@@ -78,7 +78,6 @@ html, body {
   position: absolute;
   background-image: url(../img/test.jpg);
   background-size: cover;
-  background-position: center center;
   width: 100%;
   height: 100%;
   transition: all .3s ease;
@@ -151,51 +150,47 @@ html, body {
 
 	}
 
-  .rating {
-    display: flex;
-    justify-content: space-between;
+	.rating {
+		display: flex;
+		justify-content: space-between;
 
-    p {
-    	margin: 0;
-    }
+		p {
+			margin: 0;
+		}
 
-    .stars {
-      color: lighten(#ffc807, 10%);
-    }
+		.stars {
+			color: lighten(#ffc807, 10%);
+		}
 
-    .meta {
-      font-weight: 500;
-      font-style: italic;
-    }
+		.meta {
+			font-weight: 500;
+			font-style: italic;
+		}
 
-    i {
-      width: 0.8em;
-      transform: translateY(-3px);
+		i {
+			width: 0.8em;
+			transform: translateY(-3px);
 
-      &:last-child {
-        color: #e0e0e0;
-      }
-
-    }
-
-  }
+			&:last-child {
+				color: #e0e0e0;
+			}
+		}
+	}
 
   .button {
-    background: linear-gradient(to right, #232526, #414345);
-    text-align: center;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    transition: all .3s ease;
-    color: white;
-    font-size: 15px;
+	background: linear-gradient(to right, #232526, #414345);
+	text-align: center;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	transition: all .3s ease;
+	color: white;
+	font-size: 15px;
 
-    &:hover {
-      opacity: 0.9;
-    }
-
-  }
-
+		&:hover {
+			opacity: 0.9;
+		}
+	}
 }
 
 .card:hover {
