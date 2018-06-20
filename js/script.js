@@ -4,6 +4,6 @@ $( document ).ready(function() {
     });
 
      $('.dropdown li').click(function() {
-     	console.log($(this).parent().parent());
+     	$(this).parent().parent().find('.choice').text($(this).text());
      });
 });

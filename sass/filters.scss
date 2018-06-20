@@ -1,9 +1,10 @@
 .filters-form {
 
 	position: relative;
-	margin-top: 30px;
+	margin-top: 65px;
 
 	display: flex;
+	z-index: 1;
 
 	.form {
 		padding: 0 20px;
@@ -64,6 +65,8 @@
 			cursor: pointer;
 			margin-right: 40px;
 
+			min-width: 250px;
+
 			li {
 				list-style: none;	
 				padding: 8px 60px 8px 30px;
@@ -109,6 +112,27 @@
 				padding: 3px;
 				transform: rotate(45deg);
 			}
+		}
+	}
+}
+
+.filters-films {
+	margin-top: 75px;
+	position: relative;
+	display: flex;
+	z-index: 0;
+
+	.wrapper {
+		width: $grille_1;
+
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: space-between;
+
+		.card {
+			margin-bottom: 30px;
 		}
 	}
 }

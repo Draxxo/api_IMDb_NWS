@@ -17,7 +17,6 @@ html, body {
 	margin: 0;
 
 	width: 100%;
-	height: 100%;
 
 	background: linear-gradient(to bottom, $colorOrange, #fc4a1a);
 
@@ -57,4 +56,179 @@ html, body {
 		width: 100%;
 		left: 0;
 	}
+}
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+.card {
+	width: 360px;
+	height: 225px;
+	background-color: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	transition: all .3s ease;
+	transform: scale(0.95);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.03);
+}
+
+.card__image {
+  position: absolute;
+  background-image: url(/img/test.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    transition: all .3s ease;
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  }
+}
+
+.card__info {
+	top: -60px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	transition: all 0.3s ease;
+	color: white;
+  	transform: translateY(188px);
+
+	.title {
+		margin-bottom: 7px;
+		font-size: 30px;
+		font-weight: bold;
+		position: relative;
+		padding-bottom: 0.4rem;
+		padding-left: 10px;
+		z-index: 200;
+		transition: all .3s ease;
+
+		&:after {
+			position: absolute;
+			content: "";
+			bottom: 0px;
+			left: 10px;
+			width: 60px;
+			height: 3px;
+			background: $colorOrange;
+			z-index: 100;
+  			transition: all .3s ease;
+		}
+
+	}
+
+	.genre {
+		color: #b3b7b9;
+		margin-top: 0.4rem;
+		padding-left: 10px;
+		font-size: 15px;
+		transition: all .3s ease;
+	}
+
+	.desc {
+		background: white;
+		margin-top: 10px;
+		color: #78848e;
+		padding: 20px 20px;
+		font-size: 15px;
+		transition: all .3s ease;
+		transform: translateY(20px);
+		height: 150px;
+
+		p {
+			line-height: 1.3;
+		}
+
+	}
+
+  .rating {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+    	margin: 0;
+    }
+
+    .stars {
+      color: lighten(#ffc807, 10%);
+    }
+
+    .meta {
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    i {
+      width: 0.8em;
+      transform: translateY(-3px);
+
+      &:last-child {
+        color: #e0e0e0;
+      }
+
+    }
+
+  }
+
+  .button {
+    background: #000;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: all .3s ease;
+    color: white;
+    font-size: 15px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+  }
+
+}
+
+.card:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 12px 22px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+
+  .card__image {
+    transform: translateY(-150px);
+  }
+
+  .card__info {
+    transform: translateY(-60px);
+  }
+
+  .genre {
+    opacity: 0;
+  }
+
+  .title {
+    padding-bottom: 10px;
+    transform: translateY(33px) translateX(10px);
+
+    &:after {
+      width: 85%;
+      transform: translateX(-20px);
+      transition-delay: 0.3s;
+      transition: transform 0.3s ease, width 3s ease-in;
+    }
+
+  }
+
+  .desc {
+    transform: translateY(1px);
+  }
+
 }
