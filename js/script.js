@@ -11,7 +11,9 @@ $( document ).ready(function() {
      $('.filters-films .card .button').click(function() {
      	$('.filters-window').addClass('show');
      	$('.container').addClass('blur');
-     	$("html, body").animate({ scrollTop: 70 }, 600);
+
+     	if ($("html, body").scrollTop() < 70)
+     		$("html, body").animate({ scrollTop: 70 }, 600);
  	 });
 
  	 $('.filters-window .cross').click(function() {

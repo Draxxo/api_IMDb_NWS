@@ -6,6 +6,9 @@ include 'header.php'; ?>
 		<div class="cross">
 			<i class="fas fa-times"></i>
 		</div>
+
+		<div class="back_img" style="background-image: url(../img/test.jpg);"></div>
+		<div class="behind_img" style="background-image: url(../img/test.jpg);"></div>
 	</section>
 
 	<div class="container">
@@ -50,7 +53,7 @@ include 'header.php'; ?>
 
 				<?php for($i=0;$i<10;$i++) { ?>
 				<article class="card">
-					<div class="card__image"></div>
+					<div class="card__image" style="background-image: url(../img/test.jpg);"></div>
 					<div class="card__info">
 						<h2 class="title">Retour vers le futur</h2>
 						<p class="genre">Science-fiction</p>
@@ -81,20 +84,4 @@ include 'header.php'; ?>
 
 	</div>
 
-</body>
-</html>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript">
-	var settings = {
-		"async": true,
-		"crossDomain": true,
-		"url":
-		"https://api.themoviedb.org/3/authentication/token/new?api_key=a128fc27663857df169c5d4a66796724",
-		"method": "GET",
-		"headers": {},
-		"data": "{}"
-	}
-	$.ajax(settings).done(function (response) {
-		console.log(response); //afficher dans la console (F12) le résultat de l’objet
-	});
-</script>
+<?php include 'footer.php'; ?>
