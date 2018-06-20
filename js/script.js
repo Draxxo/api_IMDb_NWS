@@ -6,4 +6,9 @@ $( document ).ready(function() {
      $('.dropdown li').click(function() {
      	$(this).parent().parent().find('.choice').text($(this).text());
      });
+
+     $('.filters-films .card .button').click(function() {
+     	$('.filters-window').show();
+     	$('.container').addClass('blur');
+ 	 });
 });

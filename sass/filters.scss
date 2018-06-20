@@ -1,3 +1,24 @@
+.filters-window {
+
+	display: none;
+
+	position: fixed;
+	z-index: 100;
+
+	top: 2%;
+	left: 2%;
+
+	width: 95%;
+	height: 95%;
+
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+.container.blur {
+	filter: blur(1rem);
+}
+
 .filters-form {
 
 	position: relative;
