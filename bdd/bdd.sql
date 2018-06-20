@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le :  mer. 20 juin 2018 à 14:09
+-- Généré le :  mer. 20 juin 2018 à 14:35
 -- Version du serveur :  5.6.35
 -- Version de PHP :  7.1.8
 
@@ -67,7 +67,7 @@ CREATE TABLE `notation` (
 --
 
 CREATE TABLE `user` (
-  `email` int(11) NOT NULL,
+  `email` varchar(255) COLLATE utf8_bin NOT NULL,
   `mdp` varchar(45) COLLATE utf8_bin NOT NULL,
   `id_user` int(11) NOT NULL,
   `firstname_user` varchar(50) COLLATE utf8_bin NOT NULL,
