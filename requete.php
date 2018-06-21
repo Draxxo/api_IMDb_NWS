@@ -26,7 +26,7 @@ $reponse->closeCursor();
 */
 
 //Affichage des favoris en fonction de l'id du user
-
+/*
 $reponse = $bdd->query('SELECT id_film FROM favorite_user WHERE id_user = ?  ');
 while ($donnees = $reponse->fetch())
 {
@@ -39,3 +39,17 @@ while ($donnees = $reponse->fetch())
 $reponse->closeCursor();
 ?>
 
+ */
+
+//Affichage de la note moyenne d'un film en fonction de son id
+$reponse = $bdd->query('SELECT AVG(note_film) AS result FROM notation WHERE id_film = ?  ');
+while ($donnees = $reponse->fetch())
+{
+    ?>
+    <p>
+        <?php echo $donnees['result']; ?>
+    </p>
+    <?php
+}
+$reponse->closeCursor();
+?>
