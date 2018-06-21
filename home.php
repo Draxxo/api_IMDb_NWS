@@ -13,43 +13,10 @@ include 'header.php'; ?>
 
 	<div class="container">
 
-		<section class="filters-form">
-			<div class="form">
-				<div class="search-box">
-					<input type="search" placeholder="Search movies">
-					<span class="fas fa-search"></span>
-				</div>
-
-				<ul class="select">
-					<li class="choice">-- Categories --</li>
-					<ul class="dropdown">
-						<li>Action</li>
-						<li>Animation</li>
-						<li>Aventure</li>
-						<li>Comedie</li>
-						<li>Epique</li>
-						<li>Fantasy</li>
-						<li>Horreur</li>
-						<li>Policier</li>
-						<li>Romantique</li>
-					</ul>
-				</ul>
-
-				<ul class="select">
-					<li class="choice">-- Notations --</li>
-					<ul class="dropdown">
-						<li>5 étoiles</li>
-						<li>4 étoiles</li>
-						<li>3 étoiles</li>
-						<li>2 étoiles</li>
-						<li>1 étoiles</li>
-					</ul>
-				</ul>
-			</div>
-		</section>
-
-		<section class="filters-films">
-			<div class="wrapper">
+		<?php for($j=0;$j<10;$j++) { ?>
+		<section class="home-caroussel nouveaute">
+			<h1>Nouveautées</h1>
+			<div class="cards">
 
 				<?php for($i=0;$i<10;$i++) { ?>
 				<article class="card">
@@ -71,7 +38,7 @@ include 'header.php'; ?>
 							</div>
 							
 							<p>
-								L'intrigue relate le voyage dans le passé d'un adolescent, Marty McFly, à bord d'une machine à voyager dans le temps fabriquée par le docteur Emmett Brown à partir d'une voiture de modèle DeLorean DMC-12...
+								L'intrigue relate le voyage dans le passé d'un adolescent, Marty McFly, à bord d'une machine à voyager dans le temps fabriquée par le docteur Emmett Brown à partir d'une voiture de modèle DeLorean DMC-12... Je suis dans le meilleur des devs et j'aime regarder Clément par le trou des toilettes. 
 							</p>
 						</div>
 						<a class="button">&#9658; Plus d'informations</a>
@@ -81,6 +48,7 @@ include 'header.php'; ?>
 
 			</div>
 		</section>
+		<?php } ?>
 
 	</div>
 

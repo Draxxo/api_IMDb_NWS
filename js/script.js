@@ -8,21 +8,30 @@ $( document ).ready(function() {
      	$('.select ul').removeClass('active');
      });
 
-     $('.filters-films .card .button').click(function() {
-     	$('.filters-window').addClass('show');
+     $('.button').click(function() {
+     	$('.lightbox').addClass('show');
      	$('.container').addClass('blur');
 
      	if ($("html, body").scrollTop() < 70)
      		$("html, body").animate({ scrollTop: 70 }, 600);
  	 });
 
- 	 $('.filters-window .cross').click(function() {
- 	 	$('.filters-window').addClass('unshow');
+ 	 $('.lightbox .cross').click(function() {
+ 	 	$('.lightbox').addClass('unshow');
  	 	
  	 	setTimeout(function() {
-	 	 	$('.filters-window').removeClass('show');
-	 	 	$('.filters-window').removeClass('unshow');
+	 	 	$('.lightbox').removeClass('show');
+	 	 	$('.lightbox').removeClass('unshow');
 	 	 	$('.container').removeClass('blur');
 	 	 }, 200);
  	 });
+
+	  $('.home-caroussel .cards').click(function() {
+	  	let card = $(this).find('.card:first-child');
+	    card.animate({"margin-left": -350}, 400, function(){  
+	    	setTimeout(function() {
+	     		card.css("margin-left",0).appendTo(card.parent());
+	     	}, 500);
+	    });  
+	  });
 });
