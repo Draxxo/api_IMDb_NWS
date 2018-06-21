@@ -19,7 +19,7 @@ $( document ).ready(function() {
                let meta = $('<p/>', {'class': 'meta', html: 'jean-claude'});
                let stars = $('<div/>', {'class': 'stars'});
                let button = $('<a/>', {'class': 'button', html: '► Plus d\'informations'});
-               let resume = $('<p/>', {html: popularFilmObject.results[element].overview});
+               let resume = $('<p/>', {html: popularFilmObject.results[element].overview.substr(0,200) + '...'});
 
 
 
