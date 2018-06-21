@@ -11,7 +11,8 @@ catch(Exception $e)
 }
 //Affichage commentaires en fonction de l'id du film
 
-$reponse = $bdd->query('SELECT text_commentary FROM commentary WHERE id_film = 2  ');
+/*
+$reponse = $bdd->query('SELECT text_commentary FROM commentary WHERE id_film = ?  ');
 while ($donnees = $reponse->fetch())
 {
 ?>
@@ -22,5 +23,19 @@ while ($donnees = $reponse->fetch())
 }
 $reponse->closeCursor();
 ?>
+*/
 
+//Affichage des favoris en fonction de l'id du user
+
+$reponse = $bdd->query('SELECT id_film FROM favorite_user WHERE id_user = ?  ');
+while ($donnees = $reponse->fetch())
+{
+?>
+    <p>
+        <?php echo $donnees['id_film']; ?>
+    </p>
+    <?php
+}
+$reponse->closeCursor();
+?>
 
