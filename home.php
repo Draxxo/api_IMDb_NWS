@@ -47,6 +47,7 @@ include 'header.php'; ?>
 				<?php } ?>
 
 			</div>
+			<span class="arrow"></span>
 		</section>
 		<?php } ?>
 
