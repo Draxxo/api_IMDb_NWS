@@ -51,8 +51,7 @@ include 'header.php'; ?>
 		<section class="filters-films">
 			<div class="wrapper">
 
-				<?php for($i=0;$i<10;$i++) { ?>
-				<article class="card">
+				<!--<article class="card">
 					<div class="card__image" style="background-image: url(../img/test.jpg);"></div>
 					<div class="card__info">
 						<h2 class="title">Retour vers le futur</h2>
@@ -76,8 +75,7 @@ include 'header.php'; ?>
 						</div>
 						<a class="button">&#9658; Plus d'informations</a>
 					</div>
-				</article>
-				<?php } ?>
+				</article>-->
 
 			</div>
 		</section>
