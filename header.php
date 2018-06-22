@@ -18,7 +18,7 @@
     <script type="text/javascript" src="js/api.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
+<body id="<?php echo($title); ?>">
 
 <header class="header">
 	<div class="header_wrapper">
