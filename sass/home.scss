@@ -17,22 +17,27 @@
 		flex-wrap: nowrap;
 	}
 
-	&:after {
-		content: '';
+	.arrow {
 		position: absolute;
 		
-		right: 0;
-		top: 15%;
+		right: 4%;
+		top: 54%;
 		
-		width: 2%;
-    	height: 9%;
+		width: 1.9%;
+    	height: 8.5%;
 
 		z-index: 10;
 
 		padding: 3px;
-		border: solid black;
+		border: solid #fff;
 	    border-width: 0 10px 10px 0;
 	    
 	    transform: rotate(-45deg);
+
+	    cursor: pointer;
+
+	    &:hover {
+	    	opacity: 0.8;
+	    }
 	}
 }

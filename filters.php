@@ -16,7 +16,7 @@ include 'header.php'; ?>
 		<section class="filters-form">
 			<div class="form">
 				<div class="search-box">
-					<input type="search" placeholder="Search movies">
+					<input id="myImput" type="search" placeholder="Search movies">
 					<span class="fas fa-search"></span>
 				</div>
 

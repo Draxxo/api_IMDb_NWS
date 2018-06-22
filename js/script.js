@@ -27,9 +27,9 @@ $( document ).ready(function() {
 		 	 }, 200);
 	 	 });
 
-		  $('.home-caroussel .cards').click(function() {
-		  	let card = $(this).find('.card:first-child');
-		    card.animate({"margin-left": -350}, 400, function(){  
+		  $('.home-caroussel .arrow').click(function() {
+		  	let card = $(this).parent().find('.card:first-child');
+		    card.animate({"margin-left": -360}, 1000, function(){  
 		    	setTimeout(function() {
 		     		card.css("margin-left",0).appendTo(card.parent());
 		     	}, 500);
