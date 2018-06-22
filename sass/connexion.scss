@@ -1,6 +1,24 @@
-.centerform {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.form-co-ins {
+	width: $grille_2;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+
+	color: #fff;
+
+	.co, .ins, .form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	hr {
+		width: 100%;
+		height: 0;
+		border: 1px dashed #fff;
+	}
+
+	input {
+		width: 200px;
+	}
 }

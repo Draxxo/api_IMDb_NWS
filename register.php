@@ -23,6 +23,8 @@ if(isset($_POST['first_name']) && isset($_POST['last_name'])
 
         $_SESSION['id'] = $id;
 
+        echo $_SESSION['id'];
+
         header('Location: home.php');
     }
     else header('Location: form-co-ins.php');

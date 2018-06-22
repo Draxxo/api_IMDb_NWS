@@ -1,24 +1,28 @@
 <?php
 $title = 'connexion';
 include 'header.php'; ?>
-<h1>Connexion</h1>
-<form action="connection.php" method=POST>
-    <p><label>Email: <input type="email" name="email"/></label></p>
-    <p><label>Mot de passe: <input type="password" name="mdp"/></label></p>
-    <p><label>Confirmer le mot de passe: <input type="password" name="mdp2"/></label></p>
-    <p><input type="submit"></p>
 
-</form>
-
-<h1>Inscription</h1>
-<form action="register.php" method=POST>
-    <p><label>Prénom: <input type="text" name="first_name"></label></p>
-    <p><label>Nom: <input type="text" name="last_name"></label></p>
-    <p><label>Email: <input type="email" name="email"/></label></p>
-    <p><label>Mot de passe: <input type="password" name="mdp"/></label></p>
-    <p><label>Confirmer le mot de passe: <input type="password" name="mdp2"/></label></p>
-    <p><input type="submit"></p>
-
-</form>
+<div class="form-co-ins">
+    <div class="co">
+        <h1>Connexion</h1>
+        <form action="connection.php" method=POST>
+            <p><input type="email" name="email" placeholder="email@hotmail.fr" /></p>
+            <p><input type="password" name="mdp" placeholder="password"/></p>
+            <p><input type="submit"></p>
+        </form>
+    </div>
+    <hr>
+    <div class="ins">
+        <h1>Inscription</h1>
+        <form action="register.php" method=POST>
+            <p><input type="text" name="first_name" placeholder="Jean"></p>
+            <p><input type="text" name="last_name" placeholder="Philippe"></p>
+            <p><input type="email" name="email" placeholder="jp@hotmail.fr"/></p>
+            <p><input type="password" name="mdp" placeholder="azerty"/></p>
+            <p><input type="password" name="mdp2" placeholder="azerty"/></p>
+            <p><input type="submit"></p>
+        </form>
+    </div>
+</div>
 
 <?php include 'footer.php'; ?>
