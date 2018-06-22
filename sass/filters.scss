@@ -137,3 +137,50 @@
 		}
 	}
 }
+
+@media screen and (max-width: 800px) {
+
+	.filters-form {
+		margin-top: 20px;
+		.form { 
+			width: $grille_2;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+	    	height: 200px;
+
+	    	.search-box {
+	    		position: relative;
+	    		svg {
+	    			position: absolute;
+					right: 0;
+					bottom: 7px;
+	    		}
+	    	}
+
+	    	.select {
+	    		.dropdown {
+	    			li {
+	    				background-color: #fff;
+						color: $colorOrange;
+						opacity: 1;
+	    			}
+	    		}
+	    		
+	    		&:nth-child(2) {
+					z-index: 1;
+				}
+				&:nth-child(3) {
+					z-index: 0;
+				}
+			}
+		}
+	}
+
+	.filters-films {
+		margin-top: 50px;
+		.wrapper {
+			width: $grille_2;
+		}
+	}
+}
