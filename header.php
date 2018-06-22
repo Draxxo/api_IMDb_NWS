@@ -3,6 +3,8 @@
 <head>
 	<title><?php echo($title); ?></title>
 
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
 	<link rel="stylesheet" type="text/css" href="css/app.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
@@ -45,7 +47,11 @@
 				<a href="filters.php">Rechercher <i class="fas fa-search"></i></a>
 			</div>
 			<div class="header_btn btn">
-				<a href="form-co-ins.php">Connexion</a>
+				<?php if(!isset($_SESSION['id'])) { ?>
+					<a href="form-co-ins.php">Connexion</a>
+				<?php } else { ?>
+					<a href="deconnection.php">Deconnexion</a>
+				<?php } ?>
 			</div>
 		</div>
 	</div>
