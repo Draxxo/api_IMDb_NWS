@@ -21,8 +21,7 @@ if(isset($_POST['first_name']) && isset($_POST['last_name'])
     if($_POST['mdp'] == $_POST['mdp2']) {
         $bdd->exec("INSERT INTO `user` VALUES ('".$id."', '".$_POST['first_name']."', '".$_POST['last_name']."', '".$_POST['email']."', '".$_POST['mdp']."')");
 
-        $_SESSION['user']    = $_POST['email'];
-        $_SESSION['id_user'] = $id;
+        $_SESSION['id'] = $id;
 
         header('Location: home.php');
     }
