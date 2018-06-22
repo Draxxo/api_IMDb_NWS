@@ -13,13 +13,13 @@ catch(Exception $e)
 if(isset($_POST['first_name']) && isset($_POST['last_name'])
     && isset($_POST['mdp'])  && isset($_POST['mdp2']) && isset($_POST['email'])) {
 
-    $st = $db->query('SELECT COUNT(*) FROM `compte`');
+    $st = $bdd->query('SELECT COUNT(*) FROM `user`');
     $donnees = $st->fetchAll();
     $id = $donnees[0][0];
     $id++;
 
     if($_POST['mdp'] == $_POST['mdp2']) {
-        $db->exec("INSERT INTO `compte` VALUES ('".$id."', '".$_POST['first_name']."', '".$_POST['last_name']."', '".$_POST['mdp']."',  '".$_POST['mdp2']."', '".$_POST['email']."')");
+        $bdd->exec("INSERT INTO `user` VALUES ('".$id."', '".$_POST['first_name']."', '".$_POST['last_name']."', '".$_POST['email']."', '".$_POST['mdp']."')");
 
         $_SESSION['user']    = $_POST['email'];
         $_SESSION['id_user'] = $id;

@@ -1,19 +1,6 @@
 <?php
-include 'header.php';
-
-
-?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Connexion/Inscription</title>
-    <link rel="stylesheet" type="text/css" href="connexion.scss">
-</head>
-
-
-<body>
-
+$title = 'connexion';
+include 'header.php'; ?>
 <h1>Connexion</h1>
 <form action="connection.php" method=POST>
     <p><label>Email: <input type="email" name="e-mail"/></label></p>
@@ -34,7 +21,4 @@ include 'header.php';
 
 </form>
 
-
-
-</body>
-</html>
+<?php include 'footer.php'; ?>
