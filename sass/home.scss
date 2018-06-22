@@ -23,8 +23,8 @@
 		right: 4%;
 		top: 54%;
 		
-		width: 1.9%;
-    	height: 8.5%;
+		width: 29px;
+    	height: 29px;
 
 		z-index: 10;
 
@@ -39,5 +39,20 @@
 	    &:hover {
 	    	opacity: 0.8;
 	    }
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.home-caroussel {
+		.cards {
+			width: 280px;
+			.card {
+				min-width: 280px;
+			}
+		}
+
+		.arrow {
+			right: 20px;
+		}
 	}
 }

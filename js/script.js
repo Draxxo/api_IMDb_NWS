@@ -37,8 +37,12 @@ $( document ).ready(function() {
 		});
 		
 		$('.home-caroussel .arrow').click(function() {
+
+			let margin = -360;
+			if (window.matchMedia("(max-width: 800px)").matches) margin = -280;
+
 		  	let card = $(this).parent().find('.card:first-child');
-		    card.animate({"margin-left": -360}, 200, "linear", function(){  
+		    card.animate({"margin-left": margin}, 200, "linear", function(){  
 		    	setTimeout(function() {
 		     		card.css("margin-left",0).appendTo(card.parent());
 		     	}, 500);
