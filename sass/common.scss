@@ -341,3 +341,29 @@ html, body {
   }
 
 }
+
+
+@media screen and (max-width: 800px) {
+	.lightbox {
+
+		.cross {
+			z-index: 1;
+		}
+
+		.back_img {
+			height: 30%;
+    		width: 100%;
+    		background-size: 100%;
+    		background-position: top;
+    		z-index: 0;
+		}
+
+		.behind_img {
+			top: 5%;
+			transform: translateX(35%);
+    		width: 200px;
+    		height: 270px;
+    		left: auto;
+		}
+	}
+}

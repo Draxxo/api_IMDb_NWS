@@ -13,8 +13,11 @@ $( document ).ready(function() {
 	     	$('.lightbox').addClass('show');
 	     	$('.container').addClass('blur');
 
-	     	if ($("html, body").scrollTop() < 70)
-	     		$("html, body").animate({ scrollTop: 70 }, 600);
+	     	let scroll = 70;
+			if (window.matchMedia("(max-width: 800px)").matches) scroll = 120;
+
+	     	if ($("html, body").scrollTop() < scroll)
+	     		$("html, body").animate({ scrollTop: scroll }, 600);
 	 	 });
 
 	 	 $('.lightbox .cross').click(function() {
